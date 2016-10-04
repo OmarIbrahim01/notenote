@@ -55,6 +55,22 @@ button, .button {
 	margin: 2rem 0;
 }
 
+
+.button2 {
+	color: white;
+	border: none;
+	background: $green;
+	padding: 0.0001rem 1.3rem;
+	border-radius: 6rem;
+	font-size: 70px;
+	a {
+		color: white;
+		text-decoration: none;
+	}
+}
+
+
+
 a {
 	color: $green;
 	text-decoration: none;

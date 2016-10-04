@@ -1,6 +1,10 @@
 .wrapper_with_padding
 	#notes.clearfix
 		- unless @note.blank?
+			= link_to "+", new_note_path, class: "button2"
+			%br
+			%br
+			%br
 			- @note.each do |note|
 				%a{ href: (url_for [note])}
 					.note
@@ -11,4 +15,4 @@
 				.wrapper
 					%h2 Add a note
 					%p It appears you haven't created any notes yet. Lets create a new note now.
-					= link_to "New Note", new_note_path, class: "button"
+					= link_to "+", new_note_path, class: "button2"
