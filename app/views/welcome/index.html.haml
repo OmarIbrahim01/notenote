@@ -2,7 +2,7 @@
 	.banner_content
 		%h1 NoteNote
 		%p Your online notebook. Never forget an idea again.
-		%button= link_to "Sign Up", new_user_registration_path
+		= link_to "Sign Up", new_user_registration_path, class: "button .button"
 
 #testimonial
 	.wrapper
@@ -26,7 +26,7 @@
 	.wrapper
 		%h2 For Realz!
 		%p I want you to sign up... If you don't, I will find you!
-		%button= link_to "Click Meee!!!", new_user_registration_path
+		= link_to "Click Meee!!!", new_user_registration_path, class: "button .button"
 
 %footer
 	%p &copy; Omar Ibrahim
