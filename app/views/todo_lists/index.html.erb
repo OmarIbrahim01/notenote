@@ -1,15 +1,17 @@
 <% unless @todo_lists.blank? %>
 
 <%= link_to "+", new_todo_list_path, class: "button2" %>
-	<div class="container">
+	
 		<p id="todo_notice"><%= notice %></p>
 		<% @todo_lists.each do |todo_list| %>
-		  <div class="todo_index_row todo_clearfix">
-		    <h2 class="todo_list_title"><%= link_to todo_list.title, todo_list %></h2>
-		    <p class="todo_list_sub_title"><%= time_ago_in_words(todo_list.created_at) %></p>
+		<div class="container_index">
+			  <div class="todo_index_row todo_clearfix">
+			    <h2 class="todo_list_title"><%= link_to todo_list.title, todo_list %></h2>
+			    <p class="todo_list_sub_title"><%= time_ago_in_words(todo_list.created_at) %></p>
+			  </div>
 		  </div>
 		<% end %>
-	</div>
+	
 
 <% else %>
 
