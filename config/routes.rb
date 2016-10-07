@@ -1,7 +1,16 @@
 Rails.application.routes.draw do
+  resources :todo_lists
 	devise_for :users, :controllers => { registrations: 'registrations' }
 	get 'welcome/index'
 	resources :notes 
+
+	resources :todo_lists do
+  		resources :todo_items do
+  			member do
+  				patch :complete
+  			end
+  		end
+ 	 end
 
 	get '/logout', to: 'devise/sessions#destroy', as: :logout
 
