@@ -1,26 +1,29 @@
-<% unless @todo_lists.blank? %>
+<div class="yield">
 
-<%= link_to "+", new_todo_list_path, class: "button2" %>
-	
-		<p id="todo_notice"><%= notice %></p>
-		<% @todo_lists.each do |todo_list| %>
-		<div class="container_index">
-			  <div class="todo_index_row todo_clearfix">
-			    <h2 class="todo_list_title"><%= link_to todo_list.title, todo_list %></h2>
-			    <p class="todo_list_sub_title"><%= time_ago_in_words(todo_list.created_at) %></p>
+	<% unless @todo_lists.blank? %>
+
+	<%= link_to "+", new_todo_list_path, class: "button2" %>
+		
+			<p id="todo_notice"><%= notice %></p>
+			<% @todo_lists.each do |todo_list| %>
+			<div class="container_index">
+				  <div class="todo_index_row todo_clearfix">
+				    <h2 class="todo_list_title"><%= link_to todo_list.title, todo_list %></h2>
+				    <p class="todo_list_sub_title"><%= time_ago_in_words(todo_list.created_at) %></p>
+				  </div>
 			  </div>
-		  </div>
-		<% end %>
-	
+			<% end %>
+		
 
-<% else %>
+	<% else %>
 
-<div id="bottom_cta">
-	<div class="wrapper">
-					<h2> Add a to-do list </h2>
-					<p> It appears you haven't created any todo lists yet. Lets create a new one now. </p>
-					<%= link_to "+", new_todo_list_path, class: "button2" %>
-		</div>
+	<div id="bottom_cta">
+		<div class="wrapper">
+						<h2> Add a to-do list </h2>
+						<p> It appears you haven't created any todo lists yet. Lets create a new one now. </p>
+						<%= link_to "+", new_todo_list_path, class: "button2" %>
+			</div>
+	</div>
+
+	<% end %>
 </div>
-
-<% end %>
