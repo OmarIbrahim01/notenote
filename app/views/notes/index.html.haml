@@ -1,5 +1,6 @@
 .wrapper_with_padding
 	#notes.clearfix
+		%h1 Notes
 		- unless @note.blank?
 			= link_to "+", new_note_path, class: "button2"
 			%br
@@ -16,3 +17,6 @@
 					%h2 Add a note
 					%p It appears you haven't created any notes yet. Lets create a new note now.
 					= link_to "+", new_note_path, class: "button2"
+	%br
+	%h1 To-do Lists
+	= render file: "app/views/todo_lists/index"
