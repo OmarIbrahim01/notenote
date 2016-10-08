@@ -1,9 +1,15 @@
 .yield
-	.wrapper_with_padding
-		#note_show
-			%h1.title= @note.title
-			%p= simple_format(@note.content)	
+	.container
+		%h2.todo_list_title= @note.title
+		%p.note_contentX= @note.content
 
-			.buttons
-				= link_to "Edit", edit_note_path(@note), class: "button"
-				= link_to "Delete", note_path(@note), method: :delete, data: { confirm: "Are you sure?" }, class: "button"
+		.links
+			= link_to "Edit", edit_note_path(@note) 
+			|
+			= link_to "Delete", note_path(@note), method: :delete, data: { confirm: "Are you sure?" }
+			|
+			= link_to 'Back', root_path
+
+%br
+%br
+%br

@@ -46,6 +46,17 @@ body {
 	padding: 1em 0;
 }
 
+.container_note {
+	width: 70%;
+	max-width: 750px;
+	background: #ddd;
+	margin: 5em auto 0 auto;
+	border-radius: 7px;
+	-webkit-box-shadow: 0 0 4px 3px rgba(0,0,0,.3);
+	box-shadow: 0 0 4px 4px rgba(0,0,0,.03);
+	padding: 1em 0;
+}
+
 .container_index {
 	width: 70%;
 	max-width: 750px;
@@ -78,6 +89,17 @@ body {
 	margin: 0 0 3em 0;
 	text-align: center;
 	font-size: 0.9em;
+	color: #33CD99;
+	font-weight: 100;
+}
+
+
+
+.note_contentX {
+	margin: 0 0 3em 0;
+	text-align: left;
+	padding: 30px 25px 0 25px;
+	font-size: 2em;
 	color: #33CD99;
 	font-weight: 100;
 }

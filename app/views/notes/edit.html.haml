@@ -1,6 +1,8 @@
 .yield
-	.wrapper_with_padding
-		%h1 Edit Your Note
-		= render 'form'
+	.container
+		%h1.todo_list_title Edit Your Note
 
-		= link_to "Cancel", note_path, class: "button"
+		.forms
+			= render 'form'
+		.links
+			= link_to "Cancel", note_path
