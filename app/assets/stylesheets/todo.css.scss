@@ -75,6 +75,7 @@ body {
 	text-transform: uppercase;
 	color: white;
 	margin: 0;
+	word-wrap: break-word;
 	a {
 		text-decoration: none;
 		color: white;
@@ -88,9 +89,11 @@ body {
 .todo_list_sub_title {
 	margin: 0 0 3em 0;
 	text-align: center;
+	padding: 0 20px;
 	font-size: 0.9em;
 	color: #33CD99;
 	font-weight: 100;
+	word-wrap: break-word;
 }
 
 
@@ -102,6 +105,7 @@ body {
 	font-size: 2em;
 	color: #33CD99;
 	font-weight: 100;
+	word-wrap: break-word;
 }
 
 .index_row {
