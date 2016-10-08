@@ -1,5 +1,8 @@
 .yield
-	.wrapper_with_padding
-		%h1 Add New Note
+	.container
+		%h1.todo_list_title Add New Note
 
-		= render 'form'
+		.forms
+			= render 'form'
+		.links
+			= link_to 'Back', root_path

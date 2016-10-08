@@ -1,4 +1,6 @@
 = simple_form_for @note do |f|
-	= f.input :title, autofocus: true
-	= f.input :content
-	= f.button :submit, class: "button"
+	.field
+		= f.input :title, autofocus: true
+		= f.input :content
+	.actions
+		= f.button :submit
