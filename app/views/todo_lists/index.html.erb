@@ -2,8 +2,9 @@
 
 	<% unless @todo_lists.blank? %>
 
-	<%= link_to "+", new_todo_list_path, class: "button2" %>
-		
+	<%= link_to "+", new_todo_list_path, class: "button2" %><br/>
+
+			
 			<p id="todo_notice"><%= notice %></p>
 			<% @todo_lists.each do |todo_list| %>
 			<div class="container_index">

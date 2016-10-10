@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :documents
   resources :todo_lists
 	devise_for :users, :controllers => { registrations: 'registrations' }
 	get 'welcome/index'

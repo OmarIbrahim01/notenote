@@ -1,0 +1,15 @@
+<%= simple_form_for(@document) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="field">
+    <%= f.input :title, autofocus: true %>
+  </div>
+
+  <div class="field">
+    <%= f.text_area :content, id: "wysiwyg" %>
+   </div>
+
+  <div class="actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

@@ -1,0 +1,31 @@
+<div class="wrapper_with_padding">
+  <div class="clearfix" id="notes">
+   <h1>Documents</h1>
+    <% unless @documents.blank? %>
+      <%= link_to "+", new_document_path, class: "button2" %>
+      <br/>
+      <br/>
+      <br/>
+      <% @documents.each do |document| %>
+        <a href="<%= (url_for [document]) %>">
+          <div class="note">
+            <p class="title">
+              <%= document.title %>
+            </p>
+            <p class="date">
+              <%= time_ago_in_words(document.created_at) %>
+            </p>
+          </div>
+        </a>
+      <% end %>
+    <% else %>
+      <div id="bottom_cta">
+        <div class="wrapper">
+          <h2>Add a document</h2>
+          <p>It appears you haven't created any documents yet. Lets create a new document now.</p>
+          <%= link_to "+", new_document_path, class: "button2" %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

@@ -20,7 +20,9 @@ gem 'simple_form'
 
 gem 'devise'
 
+gem "wysiwyg-rails"
 
+gem 'font-awesome-rails'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -35,6 +37,8 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

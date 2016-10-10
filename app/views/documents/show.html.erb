@@ -1,0 +1,20 @@
+<div class="yield">
+	<div class="container_doc">
+		<p id="notice"><%= notice %></p>
+
+		<div class="fr-view">
+			<p class="note_contentX"><%= @document.content.html_safe %></p>
+		</div>
+
+		<div class="links_green">
+			<%= link_to 'Edit', edit_document_path(@document) %> |
+			<%= link_to "Delete", document_path(@document), method: :delete, data: {confirm: "Are You Sure?"} %> |
+			<%= link_to 'Back', root_path %>
+		</div>
+
+	</div>
+</div>
+
+<br>
+<br>
+<br>

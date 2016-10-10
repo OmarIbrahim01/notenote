@@ -5,6 +5,7 @@ class NotesController < ApplicationController
 	def index
 		@note = Note.where(user_id: current_user).order("created_at DESC")
 		@todo_lists = TodoList.where(user_id: current_user).order("created_at DESC")
+		@documents = Document.where(user_id: current_user).order("created_at DESC")
 	end
 
 	def show
