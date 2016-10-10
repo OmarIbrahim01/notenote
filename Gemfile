@@ -24,6 +24,8 @@ gem "wysiwyg-rails"
 
 gem 'font-awesome-rails'
 
+gem 'wdm', '>= 0.1.0' if Gem.win_platform?
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
