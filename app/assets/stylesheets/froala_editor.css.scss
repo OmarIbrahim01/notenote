@@ -4,12 +4,7 @@
  * Copyright 2014-2016 Froala Labs
  */
 
-.clearfix::after {
-  clear: both;
-  display: block;
-  content: "";
-  height: 0;
-}
+
 .fr-element,
 .fr-element:focus {
   outline: 0px solid transparent;
