@@ -4,3 +4,10 @@
 		font-size: 46px;
 	}
 }
+
+@media screen and (min-width: 1500px) {
+	.yield {
+		padding: 0 15%;
+		z-index: -1;
+	}
+}
