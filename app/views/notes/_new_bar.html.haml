@@ -8,3 +8,6 @@
 	.btn_new
 		= link_to "", new_document_path, class: "fa fa-file-word-o"
 		%p New Document
+	.btn_new
+		= link_to "", destroy_user_session_path, method: :delete, class: "fa fa-list"
+		%p Sign out
