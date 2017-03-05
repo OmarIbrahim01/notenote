@@ -116,4 +116,37 @@
 	}
 }
 
+.container_bar {
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+h1 {
+	clear: left;
+
+}
+
+.btn_new a {
+    font-size: 3rem;
+}
+
+.btn_new {
+    display: block;
+    float: left;
+    width: 33%;
+    max-width: 100%;
+    padding: 3%;
+    text-align: center;
+    list-style: none;
+    padding-bottom: 5%;
+}
+
+
+
+
+
+
 }
