@@ -93,4 +93,27 @@
   	height: 60px;
 	}
 
+
+	#callouts {
+	
+	.callout {
+		text-align: center;
+		width: 100%;
+		padding: 1.5rem 2.5%;
+		float: left;
+		i {
+			font-size: 2rem;
+			color: $green;
+		}
+		h2 {
+			@include bold_font;
+			color: white;
+			margin-bottom: 0;
+		}
+		p {
+			color: rgba(250, 250, 250, 0.4);
+		}
+	}
+}
+
 }
