@@ -20,15 +20,64 @@
 
 @media screen and (max-width: 480px) {
 
+	header {
+		background-color: red;
+	}
+
 	body {
 		width: 100%;
-		margin: center
+		margin: center;
 	}
 
 	.yield {
 		width: 100%;
-		padding-left: 0%;
-		padding-right: 0%;
+		padding-left: 0;
+		padding-right: 0;
 	}
+
+	#notes {
+	.note {
+		
+		width: 100%;
+		min-height: 150px;
+		margin: center;
+		padding: 1.5rem 2.5%;
+		float: right;
+		border-radius: .4rem;
+		position: relative;
+		.title {
+			@include bold_font;
+			color: white;
+			margin: 0;
+			letter-spacing: 1px;
+		}
+		.date {
+			position: absolute;
+			bottom: .25rem;
+			left: 8.5%;
+			color: $green;
+			font-size: .85rem;
+		}
+	}
+}
+
+.wrapper_with_padding {
+	width: 90%;
+	margin: 0 auto;
+	padding: 3.5rem 0;
+}
+
+.container {
+	width: 90%;
+	max-width: 100%;
+	background: #2B2E2E;
+	margin: 15% 1em 0 1em;
+	border-radius: 7px;
+	-webkit-box-shadow: 0 0 4px 3px rgba(0,0,0,.3);
+	box-shadow: 0 0 4px 4px rgba(0,0,0,.03);
+	padding: 1em 0;
+	position: fixed;
+	float: left;
+}
 
 }
