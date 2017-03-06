@@ -83,6 +83,7 @@
 	padding: 3em 0;
 	position: absolute;
 	float: left;
+	height: 100%;
 }
 
 
@@ -143,6 +144,27 @@ h1 {
     list-style: none;
     padding-bottom: 5%;
 }
+
+
+input[type="submit"] {
+    background: #33CD99;
+    outline: none;
+    border: none;
+    height: 40px;
+    border-radius: 4px;
+    width: 50%;
+    display: inline-block;
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+    color: white;
+    margin: 1% 25%;
+}
+
+links {
+    text-align: center;
+    font-size: 1.3em;
+    color: white;
+  }
 
 
 
