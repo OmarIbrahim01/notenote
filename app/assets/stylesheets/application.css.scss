@@ -25,7 +25,7 @@
 @import 'global.css.scss';
 @import 'notes.css.scss';
 @import 'welcome.css.scss';
-@import 'responsive.css.scss';
+
 @import 'froala_editor.css';
 @import 'froala_editor.pkgd.css';
 @import 'froala_style.css';
@@ -33,6 +33,10 @@
 
 
 
+
 .fr-box.fr-basic.fr-top .fr-wrapper {
   margin-bottom: 10px;
 }
+
+
+@import 'responsive.css.scss';
