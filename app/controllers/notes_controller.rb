@@ -41,6 +41,9 @@ class NotesController < ApplicationController
 		redirect_to notes_path
 	end
 
+	def add_new_object
+	end
+
 	private
 
 	def find_notes

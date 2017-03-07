@@ -1,0 +1,50 @@
+.container_bar
+	.btn_new
+		= link_to "", notes_path, class: "fa fa-pencil-square-o"
+		%p Notes
+	.btn_new
+		= link_to "", todo_lists_path, class: "fa fa-list"
+		%p Todo-lists
+	.btn_new
+		= link_to "", documents_path, class: "fa fa-file-word-o"
+		%p Documents
+	.btn_new
+		= link_to "", contacts_path, class: "fa fa-user"
+		%p Contacts
+	.btn_new
+		= link_to "", "#", class: "fa fa-picture-o"
+		%p Photos
+	.btn_new
+		= link_to "", "#", class: "fa fa-video-camera"
+		%p Online Videos
+	.btn_new
+		= link_to "", "#", class: "fa fa-folder"
+		%p Files
+	.btn_new
+		= link_to "", "#", class: "fa fa-bell"
+		%p Reminders
+	.btn_add
+		= link_to "", notes_add_new_object_path, class: "fa fa-plus-circle"
+
+
+
+
+%footer
+	%p &copy; NoteNote 2016. All Rights Reserved.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	/.btn_new
+	/	= link_to "", destroy_user_session_path, method: :delete, class: "fa fa-list"
+	/	%p Sign out

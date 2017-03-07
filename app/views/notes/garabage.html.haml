@@ -1,0 +1,9 @@
+.wrapper_with_padding
+	- unless @todo_lists.blank?
+				= render file: "app/views/todo_lists/index"
+
+
+
+
+- unless @documents.blank?	
+			= render file: "app/views/documents/index"

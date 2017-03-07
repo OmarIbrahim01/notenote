@@ -1,4 +1,9 @@
 class WelcomeController < ApplicationController
-  def index
+	
+  def unsigned_index
   end
+
+  def signed_index
+  end
+
 end

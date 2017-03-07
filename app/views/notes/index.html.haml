@@ -1,6 +1,9 @@
 .yield
 	- unless (@note.blank? && @todo_lists.blank? && @documents.blank?)
-		= render 'new_bar'
+		.container_bar
+			.btn_new
+				= link_to "+", notes_add_new_object_path
+		= render 'my_bar'
 
 		.wrapper_with_padding
 			#notes.clearfix
@@ -12,22 +15,7 @@
 							.note
 								%p.title= note.title
 								%p.date= time_ago_in_words(note.created_at)
-				
-				
-
-
-
-
-
-			- unless @todo_lists.blank?
-				= render file: "app/views/todo_lists/index"
-
 			
-
-
-		- unless @documents.blank?	
-			= render file: "app/views/documents/index"
-
 	- else
 		
 		#bottom_cta

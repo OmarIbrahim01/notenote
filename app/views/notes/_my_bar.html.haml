@@ -1,0 +1,13 @@
+.container_bar
+	.btn_new
+		= link_to "", notes_path, class: "fa fa-pencil-square-o"
+		%p My Notes
+	.btn_new
+		= link_to "", todo_lists_path, class: "fa fa-list"
+		%p My Todo-lists
+	.btn_new
+		= link_to "", documents_path, class: "fa fa-file-word-o"
+		%p My Documents
+	/.btn_new
+	/	= link_to "", destroy_user_session_path, method: :delete, class: "fa fa-list"
+	/	%p Sign out
