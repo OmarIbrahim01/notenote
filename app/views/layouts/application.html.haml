@@ -14,7 +14,7 @@
       = link_to image_tag('logo.svg'), root_path, id: "logo"
       %nav
         - if user_signed_in?
-          = link_to "+", new_note_path
+          = link_to "+", welcome_add_new_object_path
           = link_to "Sign Out", destroy_user_session_path, method: :delete
           = link_to full_name, edit_user_registration_path
         -else
@@ -25,9 +25,10 @@
 
   /%p.notice= notice
   /%p.alert= alert
+  - if user_signed_in?
+    =render 'item_bar'
+  =yield
 
-
-  = yield
 
 
 

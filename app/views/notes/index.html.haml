@@ -1,10 +1,5 @@
 .yield
 	- unless (@note.blank? && @todo_lists.blank? && @documents.blank?)
-		.container_bar
-			.btn_new
-				= link_to "+", notes_add_new_object_path
-		= render 'my_bar'
-
 		.wrapper_with_padding
 			#notes.clearfix
 				- unless @note.blank?

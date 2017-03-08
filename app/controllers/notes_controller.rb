@@ -4,8 +4,6 @@ class NotesController < ApplicationController
 	
 	def index
 		@note = Note.where(user_id: current_user).order("created_at DESC")
-		@todo_lists = TodoList.where(user_id: current_user).order("created_at DESC")
-		@documents = Document.where(user_id: current_user).order("created_at DESC")
 	end
 
 	def show
@@ -39,9 +37,6 @@ class NotesController < ApplicationController
 	def destroy
 		@note.destroy
 		redirect_to notes_path
-	end
-
-	def add_new_object
 	end
 
 	private

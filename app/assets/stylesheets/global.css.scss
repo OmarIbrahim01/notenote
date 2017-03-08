@@ -24,8 +24,8 @@ body {
 
 
 .yield {
-	padding-left: 10%;
-	padding-right: 10%;
+	padding-left: 15%;
+	padding-right: 15%;
 	z-index: -1;
 }
 
@@ -40,9 +40,15 @@ body {
 }
 
 .wrapper_with_padding {
-	width: 500px;
+	width: 100%;
 	margin: 0 auto;
-	padding: 3.5rem 0;
+	
+}
+
+.wrapper_login {
+	width: 30%;
+	margin: 5rem auto;
+	
 }
 
 .clearfix:before, .clearfix:after {
@@ -58,7 +64,7 @@ button, .button {
 	border: none;
 	outline: none;
 	background: $green;
-	padding: 1rem 3.5rem;
+	
 	border-radius: 2rem;
 	a {
 		color: white;
@@ -115,21 +121,23 @@ button, .button {
 
 }
 
+
+
 .btn_my {
 
-	display: block;
-  float: left;
-  width: 33%;
+  display: inline-block;
+  width: 23%;
   max-width: 100%;
-  padding: 1em;
+  
   text-align: center;
   list-style: none;
-  padding-bottom: 10%;
+  padding-bottom: 5%;
+  padding-top: 5%;
   
 
   p {
   	text-align: center;
-  	color: #555;
+  	color: #eee;
   	font-style: italic;
   	font-weight: bold;
   }
@@ -137,6 +145,9 @@ button, .button {
   a {
 			font-size: 5rem;
 			color: $green;
+			&:hover {
+				color: white;
+			}
 		}
 
 }

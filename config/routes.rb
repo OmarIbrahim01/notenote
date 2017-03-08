@@ -7,7 +7,7 @@ Rails.application.routes.draw do
 	get 'welcome/signed_index'
 
 
-	get 'notes/add_new_object'
+	get 'welcome/add_new_object'
 
 	resources :notes 
 
