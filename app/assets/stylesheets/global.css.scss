@@ -22,6 +22,7 @@ body {
 	font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
 }
 
+
 .yield {
 	padding-left: 10%;
 	padding-right: 10%;
@@ -92,14 +93,12 @@ button, .button {
 
 .btn_new {
 
-	display: block;
+  display: block;
   float: left;
-  width: 33%;
   max-width: 100%;
   padding: 1em;
   text-align: center;
   list-style: none;
-  padding-bottom: 10%;
   
 
   p {
@@ -110,7 +109,7 @@ button, .button {
   }
 
   a {
-			font-size: 5rem;
+			font-size: 4rem;
 			color: $green;
 		}
 
@@ -144,14 +143,12 @@ button, .button {
 
 .btn_add {
 
-	display: block;
-  float: left;
-  width: 33%;
+  display: block;
+  float: right;
   max-width: 100%;
   padding: 1em;
   text-align: center;
   list-style: none;
-  padding-bottom: 10%;
   
 
   p {
@@ -162,7 +159,7 @@ button, .button {
   }
 
   a {
-			font-size: 6rem;
+			font-size: 5rem;
 			color: #ff6800;
 		}
 
