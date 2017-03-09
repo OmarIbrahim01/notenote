@@ -64,7 +64,6 @@ button, .button {
 	border: none;
 	outline: none;
 	background: $green;
-	
 	border-radius: 2rem;
 	a {
 		color: white;
@@ -72,7 +71,24 @@ button, .button {
 	}
 }
 
+
 .button {
+	color: white;
+	margin: 1rem auto;
+	display: block;
+	width: 170px;
+}
+
+.button_welcome {
+	padding: 1rem 3.5rem;
+	border: none;
+	outline: none;
+	background: $green;
+	border-radius: 2rem;
+	a {
+		color: white;
+		text-decoration: none;
+	}
 	color: white;
 	margin: 1rem auto;
 	display: block;
@@ -115,7 +131,7 @@ button, .button {
   }
 
   a {
-			font-size: 4rem;
+			font-size: 3rem;
 			color: $green;
 		}
 
