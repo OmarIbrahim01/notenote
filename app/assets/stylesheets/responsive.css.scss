@@ -267,15 +267,14 @@ links {
 	position: relative;
 	top: 0;
 	width: 100%;
-	padding: 7% 0;
-	padding-bottom: 8%;
+	padding: 11% 0;
 	.header_inner {
 		width: 90%;
 		margin: auto;
 		#logo {
-			margin: -2% auto;
+			margin: -3% auto;
 			display: inline-block;
-			width: 8rem;
+			width: 10rem;
 			float: left;
 		}
 		nav {
@@ -284,7 +283,7 @@ links {
 			a {
 				text-decoration: none;
 				color: white;
-				font-size: 1.1rem;
+				font-size: 1.5rem;
 				line-height: 1.5;
 				margin-left: 1rem;
 				&:hover {
