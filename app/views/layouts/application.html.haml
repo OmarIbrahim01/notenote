@@ -27,7 +27,13 @@
   /%p.alert= alert
   - if user_signed_in?
     =render 'item_bar'
+
+  /- if current_page.include?(notes_path)
+  / =render 'mini_nav'
+  
   =yield
+
+
 
 
 

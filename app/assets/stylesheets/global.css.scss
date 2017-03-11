@@ -193,6 +193,23 @@ button, .button {
 
 }
 
+.btn_add_mini{
+  z-index: 99;
+  position: fixed;
+  bottom: 3%;
+  right: -18%;
+  float: left;
+  max-width: 100%;
+  padding: 1em;
+  text-align: center;
+  list-style: none;
+  
+  img {
+  	width: 30%;
+  }
+
+}
+
 
 
 

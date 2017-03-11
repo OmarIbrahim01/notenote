@@ -15,7 +15,14 @@
 
 
 
-
+@media screen and (min-width: 480px) {
+	.mini_header {
+		display: none;
+	}
+	.mini_header_b {
+		display: none;
+	}
+}
 
 
 @media screen and (max-width: 480px) {
@@ -69,7 +76,7 @@
 .wrapper_with_padding {
 	width: 90%;
 	margin: 0 auto;
-	padding: 3.5rem 0;
+	padding: 0.6rem 0;
 }
 
 .wrapper_login {
@@ -220,9 +227,73 @@ links {
 
 
 
+.mini_header {
+	z-index: 99;
+	background: $dark_gray;
+	position: relative;
+	top: 0;
+	width: 100%;
+	padding: 7% 0;
+	border-bottom: 3px solid $green;
+	.header_inner {
+		width: 90%;
+		margin: auto;
+		#logo {
+			margin: -2% auto;
+			display: inline-block;
+			width: 8rem;
+			float: left;
+		}
+		nav {
+			float: right;
+			margin: -1% auto;
+			a {
+				text-decoration: none;
+				color: white;
+				font-size: 1.1rem;
+				line-height: 1.5;
+				margin-left: 1rem;
+				&:hover {
+					color: $green;
+				}
+			}
+		}
+	}
+}
 
-
-
+.mini_header_b {
+	z-index: 99;
+	background: $dark_gray;
+	position: relative;
+	top: 0;
+	width: 100%;
+	padding: 7% 0;
+	padding-bottom: 8%;
+	.header_inner {
+		width: 90%;
+		margin: auto;
+		#logo {
+			margin: -2% auto;
+			display: inline-block;
+			width: 8rem;
+			float: left;
+		}
+		nav {
+			float: right;
+			margin: -1% auto;
+			a {
+				text-decoration: none;
+				color: white;
+				font-size: 1.1rem;
+				line-height: 1.5;
+				margin-left: 1rem;
+				&:hover {
+					color: $green;
+				}
+			}
+		}
+	}
+}
 
 
 
