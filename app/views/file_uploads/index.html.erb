@@ -1,0 +1,16 @@
+<div class="yield">
+
+
+  <h1>File Uploads</h1>
+  <div class="container_file_upload">
+    <% @file_uploads.each do |file_upload| %>
+      <div class="file">
+        <h2><%= file_upload.file.html_safe %></h2>
+        <div class="buttons">
+          <p><%= link_to 'Delete', file_upload, method: :delete, data: { confirm: 'Are you sure?' }, class: "button_f" %></p>
+        </div>
+      </div>
+    <% end %>
+  </div>
+
+</div>

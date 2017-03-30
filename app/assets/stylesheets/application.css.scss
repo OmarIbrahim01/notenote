@@ -40,3 +40,10 @@
 
 
 @import 'responsive.css.scss';
+
+.fr-file{
+
+		&:hover {
+			color: #ccc;
+		}
+	}

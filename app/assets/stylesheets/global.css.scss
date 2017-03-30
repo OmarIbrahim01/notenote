@@ -171,7 +171,8 @@ button, .button {
 }
 
 .btn_add {
-
+	position: fixed;
+	right: 7.5%;
   display: block;
   float: right;
   max-width: 100%;

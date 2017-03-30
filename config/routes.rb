@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :file_uploads
   resources :contacts
   resources :documents
   resources :todo_lists
