@@ -95,6 +95,47 @@ body {
 	padding: 1em 0;
 }
 
+
+
+.container_file_upload {
+	width: 55%;
+	left: 0;
+	background: #2B2E2E;
+	border-radius: 7px;
+	padding: 1.5% 6%;
+	.file {
+		padding: 3% 2%;
+		display: flex;
+		padding-bottom: 0;
+	}
+	
+	h1{
+		text-align: center;
+		color: white;
+	}
+
+	.button_f{
+		color: white;
+		&:hover {
+			color: orange;
+		}
+	}
+
+	p {
+		left: 0;
+		margin-top: -3.7%;
+	}
+
+	.buttons {
+		display: flex;
+		margin-left: 5%; 
+
+	}
+
+	
+
+}
+
 .container_bar {
 	
 	width: 100%;

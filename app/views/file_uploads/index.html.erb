@@ -1,27 +1,16 @@
-<p id="notice"><%= notice %></p>
+<div class="yield">
 
-<h1>File Uploads</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>File</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
+  <h1>File Uploads</h1>
+  <div class="container_file_upload">
     <% @file_uploads.each do |file_upload| %>
-      <tr>
-        <td><%= file_upload.file.html_safe %></td>
-        <td><%= link_to 'Show', file_upload %></td>
-        <td><%= link_to 'Edit', edit_file_upload_path(file_upload) %></td>
-        <td><%= link_to 'Destroy', file_upload, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+      <div class="file">
+        <h2><%= file_upload.file.html_safe %></h2>
+        <div class="buttons">
+          <p><%= link_to 'Delete', file_upload, method: :delete, data: { confirm: 'Are you sure?' }, class: "button_f" %></p>
+        </div>
+      </div>
     <% end %>
-  </tbody>
-</table>
+  </div>
 
-<br>
-
-<%= link_to 'New File Upload', new_file_upload_path %>
+</div>
