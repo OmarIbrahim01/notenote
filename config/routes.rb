@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :videos
+  resources :photos
   resources :file_uploads
   resources :contacts
   resources :documents

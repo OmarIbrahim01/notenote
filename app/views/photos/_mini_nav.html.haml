@@ -1,0 +1,10 @@
+.mini_header
+  .header_inner
+    = link_to image_tag('logo.svg'), root_path, id: "logo"
+    %nav
+      - if user_signed_in?
+        = link_to "+", welcome_add_new_object_path
+        = link_to "", edit_user_registration_path, class: "fa fa-user"
+        = link_to "", destroy_user_session_path, method: :delete, class: "fa fa-sign-out"
+      -else
+        = link_to "Log In", new_user_session_path
